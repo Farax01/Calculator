@@ -1,0 +1,324 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #0f016e;
+}
+
+li {
+  margin: 10px;
+}
+
+li p {
+  font-size: 18px;
+  color: #2c2a6c;
+  margin: 20px 0 20px 0;
+}
+
+.list {
+  background-color: #0f016e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 17.5px;
+  gap: 20px;
+  color: white;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
+.list2 {
+  color: white;
+  background-color: #0f016e;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 17.5px;
+  gap: 20px;
+}
+
+.list i {
+  margin-right: 5px;
+}
+
+hr {
+  border: none;
+  border-radius: 50px;
+  border-top: 3px solid #333333;
+  width: 100%;
+  margin: auto;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="number"] {
+  height: 2rem;
+  padding: 5px;
+  color: #0f016e;
+  font-size: 16px;
+  margin: 10px 5px;
+}
+
+/* .additional label {
+  text-align: justify;
+}
+
+.additional div {
+  display: flex;
+  flex-direction: column;
+} */
+
+.icons {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0f016e;
+  text-align: center;
+}
+
+.material-packages {
+  text-align: center;
+  background-color: #0f016e;
+  display: flex;
+  justify-content: center;
+  font-size: 17.5px;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 20px;
+  color: white;
+}
+
+.material-packages div {
+  display: inline-block;
+}
+
+.materials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 50px;
+  margin: 10px;
+}
+
+.content {
+  width: 55%;
+  text-align: left;
+  color: #0f016e;
+  padding: 0 20px;
+}
+
+.employees {
+  padding: 5rem 2rem;
+  background-color: #0f016e;
+  width: 40%;
+  color: white;
+}
+
+.employee div {
+  margin: 40px 0;
+}
+
+.employee div label {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  color: white;
+  max-width: 30px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.results-div {
+  text-align: center;
+  background-color: #f3e9dc;
+  width: 100%;
+  margin-right: 15px;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  height: 3.5rem;
+  max-width: 130px;
+}
+
+.results-div h3 {
+  font-weight: 400;
+}
+
+.results-div p {
+  font-size: 16px;
+  height: 30px;
+}
+
+.last-list,
+.last-list div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floor {
+  padding: 10px 25px;
+}
+
+.floor2 {
+  margin-top: 20px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 4px;
+  transition: 0.3s;
+}
+
+.logo, .logos{
+  max-width: 30px;
+}
+
+.logos{
+  color: white;
+}
+
+
+@media screen and (max-width: 426px) {
+  .dashboard {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: -150%;
+    transition: 2.5s ease;
+  }
+
+  .last-list,
+  .last-list div {
+    display: block;
+  }
+
+  .active {
+    right: 0;
+    display: flex;
+    transition: 2.5s ease;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 999;
+  }
+
+  .floor {
+    padding: 0;
+  }
+
+  .results {
+    flex-wrap: wrap;
+  }
+
+  .floor2 {
+    margin-top: 0;
+  }
+
+  .content {
+    width: 100%;
+    text-align: left;
+    color: #0f016e;
+    padding: 0;
+  }
+
+  .employees {
+    max-width: 426px;
+    background-color: #0f016e;
+    width: 80%;
+    color: white;
+  }
+
+  .employee{
+    width: 100%;
+  }
+
+  .employee div{
+    max-width: 300px;
+  }
+
+  .employee div label {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+/* #160b60 */
+@media screen and (min-width: 374px) and (max-width: 426px) {
+  .head{
+    justify-content: space-between;
+  }
+
+  .employees {
+    max-width: 426px;
+    background-color: #0f016e;
+    width: 85%;
+    color: white;
+  }
+}
